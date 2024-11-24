@@ -18,17 +18,26 @@ function addToDo(e) {
         const toDoText = listTextInput.value;
         // create new li element
         const newToDoElement = document.createElement('li');
-        // add event listener to delete to-do item
-        newToDoElement.addEventListener('click', removeFromList);
-        
-        // add text to newToDoElement
-        newToDoElement.innerHTML = toDoText + ' <button onClick="removeFromList">X</button>';
+        // add text to newToDoElement and add delete button and done button
+        newToDoElement.innerHTML = toDoText + ' <button class="deleteBtn">X</button>'+ ' <button class="doneBtn"">Done</button>';
         // add newToDoElement to toDoList
         toDoList.appendChild(newToDoElement);
         // clear text from listTextInput
         listTextInput.value = '';
         // focus on listTextInput
         listTextInput.focus();
+        // add event listener to delete to-do items
+        const deleteBtns = document.getElementsByClassName('deleteBtn');
+        for (let d of deleteBtns){
+            console.log(d);
+             d.addEventListener('click', removeFromList);
+            }
+        // add event listener to mark done items
+        const doneBtns = document.getElementsByClassName('doneBtn');
+        for (let done of doneBtns){
+            done.addEventListener('click', markDone);
+            }
+        
     }
     
     
@@ -56,3 +65,17 @@ function clear() {
     listTextInput.focus();
 }
 }
+
+// function to mark to-do item as done
+function markDone(e) {
+    // get to-do item
+    const listItem = e.target.parentNode;
+    // add class to to-do item
+    listItem.classList.add('done');
+    // remove done button
+    listItem.removeChild(listItem.lastChild);
+    // remove delete button
+    listItem.removeChild(listItem.lastChild);
+    //focus on listTextInput
+    listTextInput.focus();
+}   
