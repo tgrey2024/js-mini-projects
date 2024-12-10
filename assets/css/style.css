@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F2E3BC;
+}
+
+h1{
+    color: #414535;
+    
+}
+
+#floating {
+    background-color: #C19875;
+}
+
+#toDoList {
+    list-style-type: none;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #618985;
+    --bs-btn-border-color: #414535;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #414535;
+    --bs-btn-hover-border-color: #618985;
+    --bs-btn-focus-shadow-rgb: #618985;
+    --bs-btn-active-color: #414535;
+    --bs-btn-active-bg: #618985;
+    --bs-btn-active-border-color: #618985;
+  }
+
+li {
+    color: #414535;
+    font-size: larger;
+}
+
+
 .done {
     text-decoration: line-through;
     color: #888;
