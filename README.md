@@ -3,7 +3,7 @@
 ## Introduction
 JavaScript Mini-Projects is a collection of HTML/CSS/Bootstrap mini apps that I built to practise skills I learnt on the AI-Augmented Full-Stack Bootcamp course at the Code Institute. Its aim is to help site users to organise their busy lives. The aim was to build 5 of these projects in 2 weeks.
 
-Live site: [Sereniteen](https://tgrey2024.github.io/p1-sereniteen-final/)
+Live site: [JavaScript Mini-Projects](https://tgrey2024.github.io/js-mini-projects/))
 
 ## Table of Contents
 - [User Experience Design](#user-experience-design)
