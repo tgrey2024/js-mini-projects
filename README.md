@@ -1,8 +1,7 @@
-# Project 1: Individual Project: Sereniteen - Teenage Anxiety Guide <a id="top"/>
-![logo](https://github.com/user-attachments/assets/8c012545-402a-447f-a8b8-ba7bd7dc000d)
+# Javascript Mini-Projects <a id="top"/>
 
 ## Introduction
-Sereniteen is the first HTML/CSS/Bootstrap website that I built as part of my first individual project on the AI-Augmented Full-Stack Bootcamp course at the Code Institute. Its aim is to help site users to understand what anxiety is, how it may affect teenagers, and provide basic guidance and links to resources and professional help.
+JavaScript Mini-Projects is a collection of HTML/CSS/Bootstrap mini apps that I built to practise skills I learnt on the AI-Augmented Full-Stack Bootcamp course at the Code Institute. Its aim is to help site users to organise their busy lives. The aim was to build 5 of these projects in 2 weeks.
 
 Live site: [Sereniteen](https://tgrey2024.github.io/p1-sereniteen-final/)
 
@@ -155,6 +154,7 @@ Validation of HTML/CSS, Lighthouse Audits, Bugs
 
 ## Credits
 ### Content References
+Ideas for some of the projects came from the YouTube video [5 Javascript Projects to Build (For Beginners)](https://www.youtube.com/watch?v=roumzWd4XJU)
 MS Copilot was used to generate much of the content on coping strategies and online resources, which was then reviewed and edited before including into the site.
 
 ### Media References
