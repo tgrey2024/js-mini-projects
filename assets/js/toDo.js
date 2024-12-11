@@ -29,8 +29,7 @@ function addToDo(e) {
         // add event listener to delete to-do items
         const deleteBtns = document.getElementsByClassName('deleteBtn');
         for (let d of deleteBtns){
-            console.log(d);
-             d.addEventListener('click', removeFromList);
+            d.addEventListener('click', removeFromList);
             }
         // add event listener to mark done items
         const doneBtns = document.getElementsByClassName('doneBtn');

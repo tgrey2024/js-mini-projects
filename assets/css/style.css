@@ -69,4 +69,13 @@ li {
     border: 1px solid var(--primary-color)
     border-radius: 10px;
     color:beige;
+    height: 10rem;
+}
+
+.viewNoteBtn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    bottom: 10px;
 }

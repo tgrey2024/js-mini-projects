@@ -53,34 +53,39 @@
                         <h2 class="lead">Add a Note</h2>
                     </div>
                     <div class="form-floating col-12 col-md-6 m-1">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Notes</label>
+                        <label for="floatingTextarea"></label>
+                        <textarea class="form-control" placeholder="Write a note" id="floatingTextarea" style="height: 80px"></textarea>
                     </div>
                     <div class="d-grid col-12 col-sm-6 mx-auto col-md-2 m-2">
-                        <button id="addNote" class="btn btn-success p-2" data-bs-toggle="popover">Add</button>
+                        <button id="addNoteBtn" class="btn btn-success p-2" data-bs-toggle="popover">Add</button>
                     </div>
                     <div class="d-grid col-12 col-sm-6 mx-auto col-md-2 m-2">
-                        <button id="clearBtn" class="btn btn-secondary p-2" data-bs-toggle="popover">Clear List</button>
+                        <button id="clearNoteBtn" class="btn btn-secondary p-2" data-bs-toggle="popover">Clear List</button>
                     </div>
+                  </div>
+                  <div class = "row" id="notesArea">
                     <div id="notes" class="row">
-                        <div class="col-10 col-md-5 mx-auto noteCard m-2 py-1 text-start">
-                            <h3>Note 1</h3>
-                            <p>Here is a note</p>
-                            <button id="addNote" class="btn btn-success p-2" data-bs-toggle="popover">View Details</button>
-                        </div>
-                        <div class="col-10 col-md-5 mx-auto noteCard m-2 py-1 text-start">
-                            <h3>Note 2</h3>
-                            <p>Here is a note</p>
-                            <button id="addNote" class="btn btn-success p-2" data-bs-toggle="popover">View Details</button>
-                        </div>
-                        <div class="col-10 col-md-5 mx-auto noteCard m-2 py-1 text-start">
-                            <h3>Note 3</h3>
-                            <p>Here is a note</p>
-                            <button id="addNote" class="btn btn-success p-2" data-bs-toggle="popover">View Details</button>
+                      <!-- Note cards will be added here  -->
                         </div>
                     </div>
             </div>
     </main>
+    <!-- Instructions Modal -->
+    <div class="modal" id="noteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Note Details</h5>
+                  <button type="button" id="closeModal" class="btn btn-bd-primary mx-1" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <!-- Note card details go in here -->
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- Boostrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Javascript link -->
