@@ -1,38 +1,56 @@
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --primary-color: #414535; /* olive green */
+    --secondary-color: #F2E3BC; /* cream */
+    --highlight-color: #618985; /* turquoise */
+    --light-highlight-color: #96BBBB; /* light ash grey */
+    --dark-secondary-color: #C19875; /* caramel */
+}
+
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #F2E3BC;
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+    padding-top: 57px;
+    min-height: 100vh;
 }
 
 h1{
-    color: #414535;
+    color: var(--primary-color);
     
 }
 
-#floating {
-    background-color: #C19875;
+header > #navbar {
+    background-color: var(--primary-color);
 }
 
-#toDoList {
-    list-style-type: none;
+#floating {
+    background-color: var(--dark-secondary-color);
 }
 
 .btn-bd-primary {
     --bs-btn-font-weight: 600;
     --bs-btn-color: #fff;
-    --bs-btn-bg: #618985;
+    --bs-btn-bg: var(--highlight-color);
     --bs-btn-border-color: #414535;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #414535;
-    --bs-btn-hover-border-color: #618985;
-    --bs-btn-focus-shadow-rgb: #618985;
+    --bs-btn-hover-border-color: var(--highlight-color);
+    --bs-btn-focus-shadow-rgb: var(--highlight-color);
     --bs-btn-active-color: #414535;
     --bs-btn-active-bg: #618985;
     --bs-btn-active-border-color: #618985;
+    margin: 2px;
   }
+/* To Do List */
+#toDoList {
+    list-style-type: none;
+}
 
 li {
-    color: #414535;
+    color: var(--primary-color);
     font-size: larger;
 }
 
@@ -40,4 +58,15 @@ li {
 .done {
     text-decoration: line-through;
     color: #888;
+}
+
+/* Note Taker */
+#notes {
+    padding-top: 1rem;
+}
+.noteCard {
+    background-color: var(--dark-secondary-color);
+    border: 1px solid var(--primary-color)
+    border-radius: 10px;
+    color:beige;
 }

@@ -19,7 +19,7 @@ function addToDo(e) {
         // create new li element
         const newToDoElement = document.createElement('li');
         // add text to newToDoElement and add delete button and done button
-        newToDoElement.innerHTML = `${toDoText} <button class="deleteBtn btn btn-bd-primary m-1" data-bs-toggle="popover">X</button><button class="doneBtn btn btn-bd-primary m-1" data-bs-toggle="popover">Done</button>`;
+        newToDoElement.innerHTML = `${toDoText} <button class="deleteBtn btn btn-bd-primary mx-1" data-bs-toggle="popover">X</button><button class="doneBtn btn btn-bd-primary mx-1" data-bs-toggle="popover">Done</button>`;
         // add newToDoElement to toDoList
         toDoList.appendChild(newToDoElement);
         // clear text from listTextInput
