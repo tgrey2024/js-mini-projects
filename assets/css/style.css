@@ -10,11 +10,44 @@
     --dark-secondary-color: #C19875; /* caramel */
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: var(--primary-font);
     background-color: var(--secondary-color);
     padding-top: 57px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    color: var(--primary-color);
+}
+
+main{
+    background-color: var(--secondary-color);
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+/* Footer */
+
+footer{
+    background-color: var(--dark-secondary-color);
+    
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 h1{
@@ -26,8 +59,15 @@ header > #navbar {
     background-color: var(--primary-color);
 }
 
+#nav-logo {
+    margin-right: 1rem;
+}
 #floating {
     background-color: var(--dark-secondary-color);
+}
+
+.btn-wide {
+    min-width: 8rem;
 }
 
 .btn-bd-primary {
