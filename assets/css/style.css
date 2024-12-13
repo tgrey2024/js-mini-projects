@@ -64,6 +64,7 @@ header > #navbar {
 }
 #floating {
     background-color: var(--dark-secondary-color);
+    min-height: 355px;
 }
 
 .btn-wide {
